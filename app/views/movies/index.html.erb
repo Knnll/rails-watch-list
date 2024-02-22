@@ -1,8 +1,19 @@
 <h1>Voici les films!</h1>
 
-<%= @movies.each do |movie| %>
+<ul>
+  <% @movies.each do |movie| %>
+  <li>
+  <h2>Film:</h2>
   <%= movie.title %>
+  </li>
+  <li>
+  <h2>Résumé:</h2>
   <%= movie.overview %>
+  </li>
   <%= movie.poster_url %>
+  <li>
+  <h2>Note:</h2>
   <%= movie.rating %>
-<% end %>
+  </li>
+  <% end %>
+</ul>
