@@ -10,7 +10,7 @@ class MoviesController < ApplicationController
   def create
     @movie = Movie.create
   end
-  
+
   private
 
   def movie_params

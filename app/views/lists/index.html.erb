@@ -5,12 +5,12 @@
   </div>
 </div>
 <div class="categories">
-  <div class="category">
-    <h2>Classic Movies</h2>
-    <img src="<%= asset_path('classic_movie.jpg') %>" alt="Classic Movies">
+  <% @lists.each do |list| %>
+    <div class="category">
+      <h2><%= list.name %></h2>
+      <img src="<%= asset_path('classic_movie.jpg') %>" alt="Classic Movies">
+    </div>
+  <% end %>
   </div>
-  <div class="category">
-    <h2>Heroes Movies</h2>
-    <img src="<%= asset_path('heroes_movies.jpg') %>" alt="Heroes Movies">
-  </div>
+  <%= link_to "Create a movie list" , new_list_path, class: "btn btn-flat" %>
 </div>

@@ -16,5 +16,26 @@
   width: 200px;
   height: 150px;
   border-radius: 5px;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #059115;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #045c1a;
+  color: white;
+}
+
+.btn-primary {
+  margin-top: 20px;
+}
+
+.form-group {
+  align-items: center;
 }
